@@ -1,0 +1,42 @@
+let addGb = document.querySelector('#add-gb');
+let minusGb = document.querySelector('#minus-gb');
+let quantity = 0
+
+addGb.addEventListener('click', function(){
+    quantity += 1;
+    document.getElementById('qty-gb').textContent = quantity;
+})
+minusGb.addEventListener('click', function(){
+    if (quantity > 0){
+        quantity -= 1;
+    }
+    document.getElementById('qty-gb').textContent = quantity;
+})
+
+let addCc = document.querySelector('#add-cc');
+let minusCc = document.querySelector('#minus-cc');
+
+addCc.addEventListener('click', function(){
+    quantity += 1;
+    document.getElementById('qty-cc').textContent = quantity;
+})
+minusCc.addEventListener('click', function(){
+    if (quantity > 0){
+        quantity -= 1;
+    }
+    document.getElementById('qty-cc').textContent = quantity;
+})
+
+let addSugar= document.querySelector('#add-sugar');
+let minusSugar = document.querySelector('#minus-sugar');
+
+addSugar.addEventListener('click', function(){
+    quantity += 1;
+    document.getElementById('qty-sugar').textContent = quantity;
+})
+minusSugar.addEventListener('click', function(){
+    if (quantity > 0){
+        quantity -= 1;
+    }
+    document.getElementById('qty-sugar').textContent = quantity;
+})
